@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+import DriverReducer from './reducer_driver';
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  drivers: DriverReducer
 });
 
 export default rootReducer;
