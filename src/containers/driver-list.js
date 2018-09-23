@@ -3,8 +3,7 @@ import { connect } from "react-redux";
 
 class DriverList extends Component {
   renderList() {
-    let { drivers } = this.props;
-    return drivers.map(driver => {
+    return this.props.drivers.map(driver => {
       return (
         <li key={driver.name} className={"list-group-item"}>
           {driver.title}
